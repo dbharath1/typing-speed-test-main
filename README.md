@@ -94,22 +94,4 @@ typing-speed-test-main/
 * Add sound feedback for mistakes
 * Add leaderboard or history tracking
 
----
-
-## 👤 Author
-
-**Bharath D**
-
-* GitHub: https://github.com/dbharath1
-* Frontend Mentor: (Add your profile link)
-
----
-
-## 🙌 Acknowledgments
-
-* Frontend Mentor for the design challenge
-* Icons and assets provided in the challenge starter files
-
----
-
 ⭐ If you like this project, consider giving it a star!
