@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Typing Speed Test</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+
+  <img src="assets/images/logo-small.svg" class="logo">
+
+  <div class="best">
+    <img src="assets/images/icon-personal-best.svg">
+    <span id="bestText">Personal best: 0 WPM</span>
+  </div>
+
+</header>
+
+<!-- stats -->
+<div class="stats">
+  <div>WPM: <span id="wpm">0</span></div>
+  <div>Accuracy: <span id="accuracy">100</span>%</div>
+  <div>Time: <span id="time">0</span></div>
+</div>
+
+<!-- controls -->
+<div class="controls">
+
+<select id="difficulty">
+<option value="easy">Easy</option>
+<option value="medium">Medium</option>
+<option value="hard">Hard</option>
+</select>
+
+<select id="mode">
+<option value="timed">Timed (60s)</option>
+<option value="passage">Passage</option>
+</select>
+
+</div>
+
+<!-- typing text -->
+<div id="passage"></div>
+
+<textarea id="input" placeholder="Start typing..."></textarea>
+
+<button id="restartBtn">
+Restart Test
+<img src="assets/images/icon-restart.svg">
+</button>
+
+<!-- START OVERLAY -->
+<div id="startOverlay" class="overlay">
+  <button id="startBtn" class="startBtn">Start Typing Test</button>
+  <p>Or click the text and start typing</p>
+</div>
+
+<!-- RESULT OVERLAY -->
+<div id="resultOverlay" class="overlay hidden">
+
+  <div class="card">
+
+    <div id="resultIcon"></div>
+
+    <h2 id="resultTitle"></h2>
+    <p id="resultMsg"></p>
+
+    <div class="resultStats">
+
+      <div class="box">
+        <label>WPM</label>
+        <span id="finalWpm"></span>
+      </div>
+
+      <div class="box">
+        <label>Accuracy</label>
+        <span id="finalAcc"></span>
+      </div>
+
+      <div class="box">
+        <label>Characters</label>
+        <span id="finalChars"></span>
+      </div>
+
+    </div>
+
+    <button onclick="startTest()">Go Again</button>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
